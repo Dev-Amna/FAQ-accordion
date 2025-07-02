@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+    font-family: sans-serif;
+    background-color: hsl(292, 16%, 49%);
+}
+
+.body-bg-img {
+    width: 100%;
+    height: auto;
+}
+
+.container {
+    position: relative;
+    margin-top: -4.5rem;
+    width: 90%;
+    max-width: 590px;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+}
+
+h1 {
+    display: flex;
+    color: hsl(292, 42%, 14%);
+    font-weight: bold;
+    font-size: 3rem;
+    gap: 1rem;
+    align-items: center;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.qs-ans {
+    padding: 10px;
+    border-bottom: 1px solid hsl(275, 100%, 97%);
+}
+
+.qs {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.qs:hover {
+    color: hsl(292, 100%, 29%);
+}
+
+.ans {
+    display: none;
+    color: hsl(0, 0%, 64%);
+    padding-top: 1rem;
+    line-height: 1.5;
+}
+
+/* attribution */
+.attribution { 
+    font-size: 11px;
+    text-align: center;
+    padding: 1rem;
+    width: 100%;
+}
+
+.attribution a {
+    text-decoration: none;    
+    font-weight: bold;
+    color: hsl(292, 100%, 29%);
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2rem;
+    }
+    
+    .container {
+        padding: 1.5rem;
+    }
+    
+    .qs {
+        font-size: 0.9rem;
+        gap: 1rem;
+    }
+    
+    .ans {
+        font-size: 0.85rem;
+    }
+}
+
+@media (max-width: 400px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+    
+    .qs {
+        font-size: 0.8rem;
+    }
+    
+    .card {
+        gap: 1.5rem;
+    }
+}
